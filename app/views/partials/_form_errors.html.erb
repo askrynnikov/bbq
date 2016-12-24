@@ -1,0 +1,13 @@
+<% errors = model.errors %>
+<% if errors.any? %>
+    <div class="alert alert-danger" id="error_explanation">
+      <div class="lead buffer-bottom">
+        <%= pluralize(errors.count, "error") %> prohibited this model from being saved:
+      </div>
+      <ul>
+        <% errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+<% end %>
