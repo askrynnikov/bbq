@@ -2,25 +2,27 @@
 
 <div class="event">
   <div class="event-info row">
-    <div class="col">
+    <div class="col-md-12">
       <%= content_tag 'div', '',
                       class: 'event-background',
-                      style: "background-image: url(#{asset_path('event.jpg')})"
+                      style: "background-image: url(#{asset_path('event.jpg')}); background-size: 100%; background-position: center; " do
       %>
-      <div class="event-info-inner row">
-        <div class="col">
-          <div class="event-description">
-            <h1><%= @event.title %></h1>
-            <h3><%= @event.datetime %></h3>
-            <p>
-              <small><%= link_to @event.address, "http://yandex.ru/maps/?text=#{@event.address}" %></small>
-              </h3>
-            <p><%= @event.description %></p>
+          <div class="event-info-inner row">
+            <div class="col-md-6">
+              <div class="event-description">
+                <h1><%= @event.title %></h1>
+                <h3><%= @event.datetime %></h3>
+                <h3>
+                  <small><%= link_to @event.address, "http://yandex.ru/maps/?text=#{@event.address}" %></small>
+                </h3>
+                <p><%= @event.description %></p>
+              </div>
+              <%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %> |
+              <%= link_to 'Back', events_path %>
+            </div>
           </div>
-          <%= link_to 'Edit', edit_event_path(@event), class: 'btn btn-primary' %> |
-          <%= link_to 'Back', events_path %>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
+</div>
 
