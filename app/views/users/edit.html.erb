@@ -1,3 +1,10 @@
 <h1>Editing User</h1>
 
-<%= render 'form', user: @user %>
+<div class="row">
+  <div class="col-md-12 buffer-top">
+    <%= render 'form', user: @user %>
+  </div>
+  <p class="buffer-top">
+    <%= link_to 'Сменить пароль', edit_user_registration_path %>
+  </p>
+</div>
