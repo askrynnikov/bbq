@@ -1,10 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row flex-items-xs-center">
+<div class="text-sm-center">
   <h1><%= @user.name %></h1>
-</div>
-<div class="row flex-items-xs-center">
-  <p class="buffer-top">
-    <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-secondary' %>
-  </p>
+  <%= image_tag user_avatar(@user) %>
+
+  <% if @user == current_user %>
+      <div class="row flex-items-xs-center">
+        <p class="buffer-top">
+          <%= link_to 'Edit', edit_user_path(@user), class: 'btn btn-secondary' %>
+        </p>
+      </div>
+  <% end %>
+  <% if @user.events.any? %>
+      <h3 class="row flex-items-xs-center">Организовал</h3>
+      <div class="row flex-items-xs-center">
+        <%= render partial: 'events/event', collection: @user.events %>
+      </div>
+  <% else %>
+      <p class="buffer-top">Пользователь пока не организовал ни одного события</p>
+  <% end %>
 </div>
