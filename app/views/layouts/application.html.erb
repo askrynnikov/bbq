@@ -28,7 +28,7 @@
         <% if user_signed_in? %>
           <li class="nav-item">
             <%= link_to "Профиль", current_user %>
-            <%= link_to "Выйти", destroy_user_session_path %>
+            <%= link_to "Выйти", destroy_user_session_path, method: :delete %>
           </li>
         <% else %>
           <li class="nav-item">
