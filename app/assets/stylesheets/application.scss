@@ -6,6 +6,14 @@ $enable-flex: true;
 // Custom bootstrap variables must be set or imported before bootstrap itself.
 @import "bootstrap";
 
+.alert-alert {
+  @extend .alert-danger;
+}
+
+.alert-notice {
+  @extend .alert-warning;
+}
+
 /*
   (с) goodprogrammer.ru
   Наши дополнительные стили для оформления отступов и тамбинашек картинок
