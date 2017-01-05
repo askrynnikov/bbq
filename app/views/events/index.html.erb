@@ -1,6 +1,4 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Events</h1>
+<h1>События</h1>
 
 <table>
   <thead>
@@ -22,7 +20,7 @@
 
 <br>
 
-<%= link_to 'New Event', new_event_path, class: "btn btn-success" %>
+<%= link_to 'Новое событие', new_event_path, class: "btn btn-success" %>
 <div class="row buffer-bottom">
   <%= render partial: 'events/event', collection: @events %>
 </div>
