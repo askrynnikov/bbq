@@ -3,11 +3,25 @@ ru:
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
   controllers:
     events:
       created: 'Событие было успешно создано.'
       updated: 'Событие было успешно обновлено.'
       destroyed: 'Событие было успешно удалено.'
+    comments:
+      created: 'Комментарий создан.'
+      error: 'Ошибка при работе с комментарием.'
+      destroyed: 'Комментарий удален.'
+    subscriptions:
+      created: 'Подписка создана.'
+      error: 'Ошибка при работе с подпиской.'
+      destroyed: 'Подписка удалена.'
     users:
       updated: 'Данные пользователя были успешно обновлены.'
   error:
