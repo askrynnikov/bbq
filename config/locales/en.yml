@@ -28,19 +28,19 @@ en:
     subscription:
       destroy_confirm: 'Are you sure you want to delete this subscription?'
   controllers:
-    events:
+    event:
       created: 'Event was successfully created.'
       updated: 'Event was successfully updated.'
       destroyed: 'Event was successfully destroyed.'
-    comments:
+    comment:
       created: 'Comment was successfully created.'
       error: 'Error when working with the comment.'
       destroyed: 'Comment was successfully destroyed.'
-    subscriptions:
+    subscription:
       created: 'Subscription was successfully created.'
       error: 'Error when working with the subscription.'
       destroyed: 'Subscription was successfully destroyed.'
-    users:
+    user:
       updated: 'User was successfully updated.'
   error:
     one: '%{count} error'

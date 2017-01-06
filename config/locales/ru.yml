@@ -10,19 +10,19 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
   controllers:
-    events:
+    event:
       created: 'Событие было успешно создано.'
       updated: 'Событие было успешно обновлено.'
       destroyed: 'Событие было успешно удалено.'
-    comments:
+    comment:
       created: 'Комментарий создан.'
       error: 'Ошибка при работе с комментарием.'
       destroyed: 'Комментарий удален.'
-    subscriptions:
+    subscription:
       created: 'Подписка создана.'
       error: 'Ошибка при работе с подпиской.'
       destroyed: 'Подписка удалена.'
-    users:
+    user:
       updated: 'Данные пользователя были успешно обновлены.'
   error:
     few: '%{count} ошибки'

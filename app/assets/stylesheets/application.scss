@@ -5,6 +5,7 @@
 $enable-flex: true;
 // Custom bootstrap variables must be set or imported before bootstrap itself.
 @import "bootstrap";
+@import "font-awesome.css";
 
 .alert-alert {
   @extend .alert-danger;
