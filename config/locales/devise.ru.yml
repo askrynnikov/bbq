@@ -1,5 +1,12 @@
 ru:
   devise:
+    sign_up: 'Зарегистрироваться'
+    log_in: "Войти"
+    forgot_your_password: "Забыли пароль?"
+    didnt_receive_confirmation_instructions: "Не получили подтверждения инструкции?"
+    didnt_receive_unlock_instructions: "Не получили инструкции разблокировки?"
+    sign_in_with: "Войти в систему с"
+    characters_minimum: 'символов минимум'
     confirmations:
       confirmed: "Ваша учётная запись подтверждена. Теперь вы вошли в систему."
       send_instructions: "В течение нескольких минут вы получите письмо с инструкциями по подтверждению вашей учётной записи."
