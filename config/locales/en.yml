@@ -21,27 +21,30 @@
 
 ---
 en:
+  404html:
+    page_not_exist: "The page you were looking for doesn't exist."
+    mistyped_address: "You may have mistyped the address or the page may have moved."
+    you_application_owner: "If you are the application owner check the logs for more information."
   comments:
     comment:
       destroy_confirm: 'Are you sure you want to delete this comment?'
-  subscriptions:
-    subscription:
-      destroy_confirm: 'Are you sure you want to delete this subscription?'
   events:
     create: 'Event was successfully created.'
     update: 'Event was successfully updated.'
     destroy: 'Event was successfully destroyed.'
   users:
     update: 'User was successfully updated.'
+  subscriptions:
+    created: 'Subscription was successfully created.'
+    destroyed: 'Subscription was successfully destroyed.'
+    error: 'Error when working with the subscription.'
+    subscription:
+      destroy_confirm: 'Are you sure you want to delete this subscription?'
   controllers:
     comment:
       created: 'Comment was successfully created.'
       error: 'Error when working with the comment.'
       destroyed: 'Comment was successfully destroyed.'
-    subscription:
-      created: 'Subscription was successfully created.'
-      error: 'Error when working with the subscription.'
-      destroyed: 'Subscription was successfully destroyed.'
   error:
     one: '%{count} error'
     other: '%{count} errors'

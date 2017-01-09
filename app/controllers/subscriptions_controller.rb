@@ -18,26 +18,27 @@ class SubscriptionsController < ApplicationController
   # end
 
   def create
+    # render 'events/show', :alert => "You haz errors!"
     if current_user == @event.user
-      render 'events/show', alert: I18n.t('controllers.subscription.error')
+      render file: 'public/404.html', status: 404, formats: [:erb]
     else
       @new_subscription = @event.subscriptions.build(subscription_params)
       @new_subscription.user = current_user
       if @new_subscription.save
-        redirect_to @event, notice: I18n.t('controllers.subscription.created')
+        redirect_to @event, notice: t('.')
       else
-        render 'events/show', alert: I18n.t('controllers.subscription.error')
+        render 'events/show', alert: t('.error')
       end
     end
   end
 
   def destroy
-    message = { notice: I18n.t('controllers.subscription.destroyed') }
+    message = { notice: t('.') }
 
     if current_user_can_edit?(@subscription)
       @subscription.destroy
     else
-      message = { alert: I18n.t('controllers.subscription.error') }
+      message = { alert: t('.error') }
     end
 
     redirect_to @event, message
