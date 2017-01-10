@@ -10,7 +10,7 @@ gem 'jquery-rails'
 
 gem 'carrierwave'
 gem 'rmagick'
-gem 'fog'
+gem 'fog-aws'
 
 gem 'bootstrap', '~> 4.0.0.alpha5'
 
