@@ -8,6 +8,9 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'jquery-rails'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 gem 'bootstrap', '~> 4.0.0.alpha5'
 
 gem 'devise'

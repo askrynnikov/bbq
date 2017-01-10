@@ -11,12 +11,13 @@
         </p>
       </div>
   <% end %>
-  <% if @user.events.any? %>
-      <h3 class="row flex-items-xs-center">Организовал</h3>
-      <div class="row flex-items-xs-center">
-        <%= render partial: 'events/event', collection: @user.events %>
-      </div>
-  <% else %>
-      <p class="buffer-top">Пользователь пока не организовал ни одного события</p>
-  <% end %>
 </div>
+
+<% if @user.events.any? %>
+    <h3 class="row flex-items-xs-center">Организовал</h3>
+    <div class="row flex-items-xs-center">
+      <%= render partial: 'events/event', collection: @user.events %>
+    </div>
+<% else %>
+    <p class="buffer-top">Пользователь пока не организовал ни одного события</p>
+<% end %>

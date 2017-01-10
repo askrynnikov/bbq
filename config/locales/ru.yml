@@ -4,10 +4,25 @@ ru:
     page_not_exist: "Страница, которую вы ищете, не существует."
     mistyped_address: "Возможно, вы ошиблись при вводе адреса или страницы могут быть перемещены."
     you_application_owner: "Если вы являетесь владельцем приложения проверьте журналы для получения дополнительной информации."
+  photos:
+    create:
+      success: 'Фотография была успешно создана.'
+      error: 'Ошибка при работе с фото.'
+    destroy:
+      success: 'Фотография была успешно уничтожена.'
+      error: 'Ошибка при работе с фото.'
+    comment:
+      destroy_confirm: 'Are you sure you want to delete this photo?'
   app:
     name: 'Шашлыки'
     company: 'Хороший программист'
   comments:
+    created:
+      success: 'Комментарий создан.'
+      error: 'Ошибка при работе с комментарием.'
+    destroyed:
+      success: 'Комментарий удален.'
+      error: 'Ошибка при работе с комментарием.'
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
   events:
@@ -17,16 +32,14 @@ ru:
   users:
     update: 'Данные пользователя были успешно обновлены.'
   subscriptions:
-    create: 'Подписка создана.'
-    destroy: 'Подписка удалена.'
-    error: 'Ошибка при работе с подпиской.'
+    create:
+      success: 'Подписка создана.'
+      error: 'Ошибка при работе с подпиской.'
+    destroy:
+      success: 'Подписка удалена.'
+      error: 'Ошибка при работе с подпиской.'
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
-  controllers:
-    comment:
-      created: 'Комментарий создан.'
-      error: 'Ошибка при работе с комментарием.'
-      destroyed: 'Комментарий удален.'
   error:
     few: '%{count} ошибки'
     many: '%{count} ошибок'
@@ -37,8 +50,14 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      photo: 'Фотография'
+      comment: 'Комментарий'
+      subscription: 'Подписка'
     attributes:
+      photo:
+        photo: 'Фотография'
       user:
+        avatar: 'Аватар'
         email: 'Email'
         name: 'Имя'
         password: 'Пароль'
@@ -48,6 +67,12 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      comment:
+        user_name: 'Ваше имя'
+        body: 'Комментарий'
+      subscription:
+        user_name: 'Ваше имя'
+        user_email: 'Ваш email'
     errors:
       messages:
         record_invalid: 'Возникли ошибки: %{errors}'

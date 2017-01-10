@@ -1,5 +1,6 @@
 /*
   =require events
+  =require users
 */
 
 $enable-flex: true;
@@ -59,4 +60,9 @@ $enable-flex: true;
 
 .thumbnail-inner {
   padding: 20px 4px 4px;
+}
+
+.user-avatar, .img-icon  {
+  margin-top: -2px;
+  height: 20px;
 }
