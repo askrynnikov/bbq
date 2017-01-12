@@ -57,6 +57,13 @@ ru:
       datetime: 'Состоится'
       owner: 'Организатор'
       subject: 'Новый комментарий @ %{title}'
+    photo:
+      title: 'Новая фотография'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      subject: 'Новая фотография @ %{title}'
   error:
     few: '%{count} ошибки'
     many: '%{count} ошибок'

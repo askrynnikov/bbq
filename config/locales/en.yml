@@ -75,6 +75,13 @@ en:
       datetime: 'Hold'
       owner: 'Owner'
       subject: 'New comment @ %{title}'
+    photo:
+      title: 'New photo'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Hold'
+      owner: 'Owner'
+      subject: 'New photo @ %{title}'
   error:
     one: '%{count} error'
     other: '%{count} errors'
