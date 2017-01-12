@@ -58,6 +58,23 @@ en:
       error: 'Error when working with the subscription.'
     subscription:
       destroy_confirm: 'Are you sure you want to delete this subscription?'
+  event_mailer:
+    subscription:
+      title: 'New subscription'
+      name: 'Name'
+      email: 'Email'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Hold'
+      owner: 'Owner'
+      subject: 'New subscription %{title}'
+    comment:
+      title: 'New subscription'
+      author: 'Author'
+      event: 'Event'
+      datetime: 'Hold'
+      owner: 'Owner'
+      subject: 'New comment @ %{title}'
   error:
     one: '%{count} error'
     other: '%{count} errors'

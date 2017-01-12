@@ -25,6 +25,8 @@ class SubscriptionsController < ApplicationController
       @new_subscription = @event.subscriptions.build(subscription_params)
       @new_subscription.user = current_user
       if @new_subscription.save
+        # EventMailer.subscription(@event, @new_subscription).deliver
+        EventMailer.subscription(@event, @new_subscription).deliver_now
         redirect_to @event, notice: t('.success')
       else
         render 'events/show', alert: t('.error')

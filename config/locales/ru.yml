@@ -17,10 +17,10 @@ ru:
     name: 'Шашлыки'
     company: 'Хороший программист'
   comments:
-    created:
+    create:
       success: 'Комментарий создан.'
       error: 'Ошибка при работе с комментарием.'
-    destroyed:
+    destroy:
       success: 'Комментарий удален.'
       error: 'Ошибка при работе с комментарием.'
     comment:
@@ -40,6 +40,23 @@ ru:
       error: 'Ошибка при работе с подпиской.'
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+  event_mailer:
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      subject: 'Новая подписка на %{title}'
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      subject: 'Новый комментарий @ %{title}'
   error:
     few: '%{count} ошибки'
     many: '%{count} ошибок'
