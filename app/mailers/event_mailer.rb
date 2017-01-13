@@ -30,7 +30,6 @@ class EventMailer < ApplicationMailer
     @aaa = photo.photo
     @filename = photo.photo.filename
     attachments.inline[@filename] = photo.photo.read
-    # attachments.inline["photo#{photo.photo.extension}"] = photo.photo.read
     mail to: email, subject: t('.subject', title: event.title)
   end
 end
