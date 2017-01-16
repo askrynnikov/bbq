@@ -12,7 +12,7 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.alpha5'
 
 gem 'devise'
 gem 'devise-i18n'
